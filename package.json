@@ -22,6 +22,11 @@
     "cypress:open": "cross-env TZ=Europe/Berlin npx cypress open",
     "prepare": "husky install"
   },
+  "prettier": {
+    "singleQuote": true,
+    "semi": true,
+    "trailingComma": "all"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
