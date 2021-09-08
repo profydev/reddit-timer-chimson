@@ -26,7 +26,15 @@ function Footer() {
       >
         profy.dev
       </Styles.StyledLink>
-      <Link href="/" to="/" style={{ display: 'inline-flex' }}>
+      <Link
+        href="/"
+        to="/"
+        style={{
+          display: 'inline-flex',
+          marginTop: '-3px',
+          marginLeft: '45px',
+        }}
+      >
         <Logo width={36} />
       </Link>
       <Styles.StyledLink
