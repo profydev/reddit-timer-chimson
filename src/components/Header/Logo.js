@@ -1,14 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Icon = styled.svg`
-  width: 150px;
-  height: 36px;
-`;
+import Styles from './styles';
 
 function Logo() {
   return (
-    <Icon viewBox="0 0 150 36" fill="none">
+    <Styles.Icon viewBox="0 0 150 36" fill="none">
       <ellipse
         cx="83.1185"
         cy="10.5623"
@@ -53,7 +48,7 @@ function Logo() {
         d="M10.33 17.2426C10.33 16.362 11.0741 15.6228 11.9606 15.6228C12.8471 15.6228 13.5664 16.362 13.5664 17.2426C13.5664 18.1232 12.8476 18.8377 11.9606 18.8377C11.0737 18.8377 10.33 18.1232 10.33 17.2426ZM17.3637 17.2426C17.3637 16.3611 18.1087 15.6228 18.9961 15.6228C19.8831 15.6228 20.6019 16.3611 20.6019 17.2426C20.6019 18.1236 19.8835 18.8377 18.9961 18.8377C18.1087 18.8377 17.3637 18.1236 17.3637 17.2426Z"
         fill="#FF4500"
       />
-    </Icon>
+    </Styles.Icon>
   );
 }
 

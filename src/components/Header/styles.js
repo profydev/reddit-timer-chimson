@@ -38,9 +38,15 @@ const StyledLinksContainer = styled.div`
   min-width: 261px;
 `;
 
+const Icon = styled.svg`
+  width: 150px;
+  height: 36px;
+`;
+
 export default {
   StyledLink,
   StyledHeader,
   StyledLinksContainer,
   A,
+  Icon,
 };
