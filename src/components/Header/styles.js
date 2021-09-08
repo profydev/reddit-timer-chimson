@@ -23,7 +23,7 @@ const A = styled.a`
   line-height: 19.5px;
 `;
 
-const StyledHeader = styled.header`
+const Header = styled.header`
   min-height: 100px;
   display: flex;
   margin: 0 80px;
@@ -32,7 +32,7 @@ const StyledHeader = styled.header`
   margin-bottom: 27px;
 `;
 
-const StyledLinksContainer = styled.div`
+const LinksContainer = styled.div`
   display: flex;
   justify-content: space-between;
   min-width: 261px;
@@ -45,8 +45,8 @@ const Icon = styled.svg`
 
 export default {
   StyledLink,
-  StyledHeader,
-  StyledLinksContainer,
+  Header,
+  LinksContainer,
   A,
   Icon,
 };

@@ -6,18 +6,18 @@ import Styles from './styles';
 
 function Header() {
   return (
-    <Styles.StyledHeader>
+    <Styles.Header>
       <Link href="/" to="/" style={{ display: 'inline-flex' }}>
         <Logo />
       </Link>
-      <Styles.StyledLinksContainer>
+      <Styles.LinksContainer>
         <Styles.StyledLink href="/search" to="/search/javascript">
           Search
         </Styles.StyledLink>
         <SectionLink href="#how-it-works">How it works</SectionLink>
         <SectionLink href="#about">About</SectionLink>
-      </Styles.StyledLinksContainer>
-    </Styles.StyledHeader>
+      </Styles.LinksContainer>
+    </Styles.Header>
   );
 }
 
