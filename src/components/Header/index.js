@@ -7,11 +7,11 @@ import Styles from './styles';
 function Header() {
   return (
     <Styles.StyledHeader>
-      <Link href="/" to="/home" style={{ display: 'inline-flex' }}>
+      <Link href="/" to="/" style={{ display: 'inline-flex' }}>
         <Logo />
       </Link>
       <Styles.StyledLinksContainer>
-        <Styles.StyledLink href="/search" to="/search">
+        <Styles.StyledLink href="/search" to="/search/javascript">
           Search
         </Styles.StyledLink>
         <SectionLink href="#how-it-works">How it works</SectionLink>
