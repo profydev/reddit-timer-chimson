@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Styles from '../Header/styles';
+import * as Styles from '../Header/styles';
 import { ReactComponent as Logo } from './logo.svg';
 
 const StyledFooter = styled.div`

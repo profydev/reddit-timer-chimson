@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const StyledLink = styled(Link)`
+export const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
   font-style: normal;
@@ -10,7 +10,7 @@ const StyledLink = styled(Link)`
   line-height: ${(props) => (props.lineheight ? props.lineheight : 19.5)}px;
 `;
 
-const Header = styled.header`
+export const Header = styled.header`
   min-height: 100px;
   display: flex;
   margin: 0 80px;
@@ -19,14 +19,8 @@ const Header = styled.header`
   margin-bottom: 27px;
 `;
 
-const LinksContainer = styled.div`
+export const LinksContainer = styled.div`
   display: flex;
   justify-content: space-between;
   min-width: 261px;
 `;
-
-export default {
-  StyledLink,
-  Header,
-  LinksContainer,
-};
