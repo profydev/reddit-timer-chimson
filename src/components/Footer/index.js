@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Styles from '../Header/styles';
-import Logo from './Logo';
+import { ReactComponent as Logo } from './logo.svg';
 
 const StyledFooter = styled.div`
   display: flex;
@@ -35,7 +35,7 @@ function Footer() {
           marginLeft: '45px',
         }}
       >
-        <Logo width={36} />
+        <Logo width={36} height={36} />
       </Link>
       <Styles.StyledLink
         href="/terms"
