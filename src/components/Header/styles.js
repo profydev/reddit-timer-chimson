@@ -8,7 +8,7 @@ const StyledLink = styled(Link)`
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  color: #636363;
+  color: ${(props) => props.theme.color.text};
   line-height: 19.5px;
 `;
 
@@ -19,7 +19,7 @@ const A = styled.a`
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  color: #636363;
+  color: ${(props) => props.theme.color.text};
   line-height: 19.5px;
 `;
 
