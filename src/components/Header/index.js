@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
-import SectionLink from './SectionLink';
 import Styles from './styles';
 
 function Header() {
@@ -14,8 +13,12 @@ function Header() {
         <Styles.StyledLink href="/search" to="/search/javascript">
           Search
         </Styles.StyledLink>
-        <SectionLink href="#how-it-works">How it works</SectionLink>
-        <SectionLink href="#about">About</SectionLink>
+        <Styles.StyledLink href="#how-it-works" to="#how-it-works">
+          How it works
+        </Styles.StyledLink>
+        <Styles.StyledLink href="#about" to="#about">
+          About
+        </Styles.StyledLink>
       </Styles.LinksContainer>
     </Styles.Header>
   );

@@ -3,7 +3,11 @@ import React from 'react';
 import Styles from './styles';
 
 function SectionLink({ href, children }) {
-  return <Styles.A href={href}>{children}</Styles.A>;
+  return (
+    <Styles.StyledLink href={href} to={href}>
+      {children}
+    </Styles.StyledLink>
+  );
 }
 
 SectionLink.propTypes = {

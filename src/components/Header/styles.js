@@ -4,24 +4,22 @@ import styled from 'styled-components';
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
-  font-family: 'Montserrat';
-  font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: ${(props) => (props.fontSize ? props.fontSize : 16)}px;
   color: ${(props) => props.theme.color.text};
-  line-height: 19.5px;
+  line-height: ${(props) => (props.lineHeight ? props.lineHeight : 19.5)}px;
 `;
 
-const A = styled.a`
-  text-decoration: none;
-  color: inherit;
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  color: ${(props) => props.theme.color.text};
-  line-height: 19.5px;
-`;
+// Font
+// Montserrat
+// Weight
+// 400
+// Style
+// normal
+// Size
+// 14px
+// Line height
+// 17.07px
 
 const Header = styled.header`
   min-height: 100px;
@@ -47,6 +45,5 @@ export default {
   StyledLink,
   Header,
   LinksContainer,
-  A,
   Icon,
 };
