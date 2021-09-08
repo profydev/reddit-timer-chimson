@@ -17,7 +17,7 @@ function Footer() {
     <StyledFooter>
       <Styles.StyledLink
         fontSize={14}
-        lineHeight={17.07}
+        lineheight={17.07}
         href="https://profy.dev/employers"
         to={{
           pathname: 'https://profy.dev/employers',
@@ -41,7 +41,7 @@ function Footer() {
         href="/terms"
         to="/terms"
         fontSize={14}
-        lineHeight={17.07}
+        lineheight={17.07}
       >
         Terms & Privacy
       </Styles.StyledLink>

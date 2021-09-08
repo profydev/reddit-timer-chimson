@@ -7,7 +7,7 @@ const StyledLink = styled(Link)`
   font-style: normal;
   font-size: ${(props) => (props.fontSize ? props.fontSize : 16)}px;
   color: ${(props) => props.theme.color.text};
-  line-height: ${(props) => (props.lineHeight ? props.lineHeight : 19.5)}px;
+  line-height: ${(props) => (props.lineheight ? props.lineheight : 19.5)}px;
 `;
 
 // Font
