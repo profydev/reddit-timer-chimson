@@ -10,17 +10,6 @@ const StyledLink = styled(Link)`
   line-height: ${(props) => (props.lineheight ? props.lineheight : 19.5)}px;
 `;
 
-// Font
-// Montserrat
-// Weight
-// 400
-// Style
-// normal
-// Size
-// 14px
-// Line height
-// 17.07px
-
 const Header = styled.header`
   min-height: 100px;
   display: flex;
@@ -36,14 +25,8 @@ const LinksContainer = styled.div`
   min-width: 261px;
 `;
 
-const Icon = styled.svg`
-  width: ${(props) => props.width}px;
-  height: 36px;
-`;
-
 export default {
   StyledLink,
   Header,
   LinksContainer,
-  Icon,
 };
