@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import * as Styles from '../Header/styles';
 import { ReactComponent as Logo } from './logo.svg';
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
   display: flex;
   min-height: 100px;
   margin: 0 250px;
