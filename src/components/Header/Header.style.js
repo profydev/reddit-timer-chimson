@@ -10,7 +10,7 @@ export const StyledLink = styled(Link)`
   line-height: ${(props) => (props.lineheight ? props.lineheight : 19.5)}px;
 `;
 
-export const Header = styled.header`
+export const Container = styled.header`
   min-height: 100px;
   display: flex;
   margin: 0 80px;
@@ -19,7 +19,7 @@ export const Header = styled.header`
   margin-bottom: 27px;
 `;
 
-export const LinksContainer = styled.div`
+export const LinkWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   min-width: 261px;

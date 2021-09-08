@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import * as Styles from '../Header/styles';
+import * as Styles from '../Header/Header.style';
 import { ReactComponent as Logo } from './logo.svg';
 
-const StyledFooter = styled.footer`
+const Container = styled.footer`
   display: flex;
   min-height: 100px;
   margin: 0 250px;
@@ -14,7 +14,7 @@ const StyledFooter = styled.footer`
 
 function Footer() {
   return (
-    <StyledFooter>
+    <Container>
       <Styles.StyledLink
         fontSize={14}
         lineheight={17.07}
@@ -45,7 +45,7 @@ function Footer() {
       >
         Terms & Privacy
       </Styles.StyledLink>
-    </StyledFooter>
+    </Container>
   );
 }
 

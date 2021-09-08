@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import * as Styles from './Header.style';
 import { ReactComponent as Logo } from './logo.svg';
-import * as Styles from './styles';
 
 function Header() {
   return (
-    <Styles.Header>
+    <Styles.Container>
       <Link href="/" to="/" style={{ display: 'inline-flex' }}>
         <Logo width={150} height={36} />
       </Link>
-      <Styles.LinksContainer>
+      <Styles.LinkWrapper>
         <Styles.StyledLink href="/search" to="/search/javascript">
           Search
         </Styles.StyledLink>
@@ -19,8 +19,8 @@ function Header() {
         <Styles.StyledLink href="#about" to="#about">
           About
         </Styles.StyledLink>
-      </Styles.LinksContainer>
-    </Styles.Header>
+      </Styles.LinkWrapper>
+    </Styles.Container>
   );
 }
 
