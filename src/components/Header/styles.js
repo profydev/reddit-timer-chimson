@@ -39,7 +39,7 @@ const LinksContainer = styled.div`
 `;
 
 const Icon = styled.svg`
-  width: 150px;
+  width: ${(props) => props.width}px;
   height: 36px;
 `;
 

@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import Styles from '../Header/styles';
 
-function Logo() {
+function Logo({ width }) {
   return (
-    <Styles.Icon viewBox="0 0 150 36" fill="none">
+    <Styles.Icon viewBox="0 0 36 36" fill="none" width={width}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -31,5 +32,9 @@ function Logo() {
     </Styles.Icon>
   );
 }
+
+Logo.propTypes = {
+  width: PropTypes.number.isRequired,
+};
 
 export default Logo;

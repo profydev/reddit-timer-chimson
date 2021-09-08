@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import Styles from './styles';
 
-function Logo() {
+function Logo({ width }) {
   return (
-    <Styles.Icon viewBox="0 0 150 36" fill="none">
+    <Styles.Icon viewBox="0 0 150 36" fill="none" width={width}>
       <ellipse
         cx="83.1185"
         cy="10.5623"
@@ -51,5 +52,9 @@ function Logo() {
     </Styles.Icon>
   );
 }
+
+Logo.propTypes = {
+  width: PropTypes.number.isRequired,
+};
 
 export default Logo;

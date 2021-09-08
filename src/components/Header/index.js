@@ -8,7 +8,7 @@ function Header() {
   return (
     <Styles.Header>
       <Link href="/" to="/" style={{ display: 'inline-flex' }}>
-        <Logo />
+        <Logo width={150} />
       </Link>
       <Styles.LinksContainer>
         <Styles.StyledLink href="/search" to="/search/javascript">
