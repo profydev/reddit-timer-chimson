@@ -23,7 +23,7 @@ const A = styled.a`
   line-height: 19.5px;
 `;
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
   min-height: 100px;
   display: flex;
   margin: 0 80px;
@@ -39,5 +39,8 @@ const StyledLinksContainer = styled.div`
 `;
 
 export default {
-  StyledLink, StyledHeader, StyledLinksContainer, A,
+  StyledLink,
+  StyledHeader,
+  StyledLinksContainer,
+  A,
 };
