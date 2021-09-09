@@ -1,23 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from './Logo';
-import SectionLink from './SectionLink';
-import Styles from './styles';
+import * as Styles from './Header.style';
+import { ReactComponent as Logo } from './logo.svg';
 
 function Header() {
   return (
-    <Styles.StyledHeader>
+    <Styles.Container>
       <Link href="/" to="/" style={{ display: 'inline-flex' }}>
-        <Logo />
+        <Logo width={150} height={36} />
       </Link>
-      <Styles.StyledLinksContainer>
+      <Styles.LinkWrapper>
         <Styles.StyledLink href="/search" to="/search/javascript">
           Search
         </Styles.StyledLink>
-        <SectionLink href="#how-it-works">How it works</SectionLink>
-        <SectionLink href="#about">About</SectionLink>
-      </Styles.StyledLinksContainer>
-    </Styles.StyledHeader>
+        <Styles.StyledLink href="#how-it-works" to="#how-it-works">
+          How it works
+        </Styles.StyledLink>
+        <Styles.StyledLink href="#about" to="#about">
+          About
+        </Styles.StyledLink>
+      </Styles.LinkWrapper>
+    </Styles.Container>
   );
 }
 
