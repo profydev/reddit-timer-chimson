@@ -1,6 +1,8 @@
 const theme = {
   color: {
     text: '#636363',
+    headline: '#000000',
+    subHeadline: '#93918F',
   },
   font: {
     family: {
