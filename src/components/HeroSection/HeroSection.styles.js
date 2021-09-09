@@ -16,10 +16,6 @@ export const Wrapper = styled.div`
 
 export const Headline = styled.span`
   font-size: 36px;
-`;
-
-export const Headline = styled.span`
-  font-size: 38px;
   font-family: ${(props) => props.theme.font.family.headline};
   color: ${(props) => props.theme.color.headline};
   line-height: 45.6px;
