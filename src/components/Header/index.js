@@ -13,10 +13,10 @@ function Header() {
         <Styles.StyledLink href="/search" to="/search/javascript">
           Search
         </Styles.StyledLink>
-        <Styles.StyledLink href="#how-it-works" to="#how-it-works">
+        <Styles.StyledLink href="#how-it-works" as="a">
           How it works
         </Styles.StyledLink>
-        <Styles.StyledLink href="#about" to="#about">
+        <Styles.StyledLink href="#about" as="a">
           About
         </Styles.StyledLink>
       </Styles.LinkWrapper>
