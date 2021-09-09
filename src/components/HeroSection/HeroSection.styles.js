@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
   align-items: flex-start;
   justify-content: center;
   align-items: center;
+  margin-bottom: 133px;
 `;
 
 export const Headline = styled.span`
