@@ -25,6 +25,9 @@ const GlobalStyles = createGlobalStyle`
     line-height: ${(props) => props.theme.font.lineHeight.default};
     color: ${(props) => props.theme.color.text};
   }
+  a {
+    text-decoration:none;
+  }
 `;
 
 export default GlobalStyles;

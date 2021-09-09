@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import * as Styles from '../Header/Header.style';
 import { ReactComponent as Logo } from './logo.svg';
 
 const Container = styled.footer`
@@ -12,17 +11,18 @@ const Container = styled.footer`
   align-items: center;
 `;
 
+const StyledLink = styled(Link)`
+  font-size: ${(props) => props.theme.font.size.small};
+  color: ${(props) => props.theme.color.text};
+  line-height: ${(props) => props.theme.font.lineHeight.default};
+`;
+
 function Footer() {
   return (
     <Container>
-      <Styles.StyledLink
-        fontSize={14}
-        lineheight={17.07}
-        href="https://profy.dev/employers"
-        as="a"
-      >
+      <StyledLink href="https://profy.dev/employers" as="a">
         profy.dev
-      </Styles.StyledLink>
+      </StyledLink>
       <Link
         href="/"
         to="/"
@@ -34,14 +34,9 @@ function Footer() {
       >
         <Logo width={36} height={36} />
       </Link>
-      <Styles.StyledLink
-        href="/terms"
-        to="/terms"
-        fontSize={14}
-        lineheight={17.07}
-      >
+      <StyledLink href="/terms" to="/terms">
         Terms & Privacy
-      </Styles.StyledLink>
+      </StyledLink>
     </Container>
   );
 }

@@ -2,12 +2,9 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: inherit;
-  font-style: normal;
-  font-size: ${(props) => (props.fontSize ? props.fontSize : 16)}px;
+  font-size: ${(props) => props.theme.font.size.default};
   color: ${(props) => props.theme.color.text};
-  line-height: ${(props) => (props.lineheight ? props.lineheight : 19.5)}px;
+  line-height: ${(props) => props.theme.font.lineHeight.medium};
 `;
 
 export const Container = styled.header`
