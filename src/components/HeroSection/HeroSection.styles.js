@@ -51,9 +51,7 @@ export const Button = styled.button`
 `;
 
 export const Image = styled.div`
-  box-sizing: border-box;
   min-width: 1114px;
   min-height: 332px;
-  border: 1px solid #f3f3f3;
   background-image: url(${heatmap});
 `;
