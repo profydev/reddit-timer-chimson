@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import heatmap from './heatmap.png';
 
 export const Container = styled.div`
   display: block;
@@ -49,10 +48,4 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   display: flex;
-`;
-
-export const Image = styled.div`
-  min-width: 1114px;
-  min-height: 332px;
-  background-image: url(${heatmap});
 `;

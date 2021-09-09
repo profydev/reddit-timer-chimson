@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import DEFAULT_SUBREDDIT from '../../shared';
+import heatmap from './heatmap.png';
 import * as S from './HeroSection.styles';
 
 function HeroSection() {
@@ -22,7 +23,7 @@ function HeroSection() {
           {DEFAULT_SUBREDDIT}
         </S.SubHeadlineTwo>
         <Link to={`/search/${DEFAULT_SUBREDDIT}`}>
-          <S.Image />
+          <img src={heatmap} alt="Heatmap" style={{ maxWidth: '100%' }} />
         </Link>
       </S.Wrapper>
     </S.Container>
