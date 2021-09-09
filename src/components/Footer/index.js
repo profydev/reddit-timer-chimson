@@ -19,10 +19,7 @@ function Footer() {
         fontSize={14}
         lineheight={17.07}
         href="https://profy.dev/employers"
-        to={{
-          pathname: 'https://profy.dev/employers',
-        }}
-        target="_blank"
+        as="a"
       >
         profy.dev
       </Styles.StyledLink>
