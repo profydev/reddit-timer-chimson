@@ -13,6 +13,8 @@ const GlobalStyles = createGlobalStyle`
   /** Bitter Regular **/
   @font-face {
     font-family: "Bitter";
+    font-weight: 400;
+    font-style: normal;
     src: url("/fonts/Bitter-Regular.woff2") format("woff2"),
  url("/fonts/Bitter-Regular.woff") format("woff");
   }
