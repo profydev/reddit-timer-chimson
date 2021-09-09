@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DEFAULT_SUBREDDIT from '../../shared';
 import * as Styles from './Header.style';
 import { ReactComponent as Logo } from './logo.svg';
 
@@ -10,7 +11,7 @@ function Header() {
         <Logo width={150} height={36} />
       </Link>
       <Styles.LinkWrapper>
-        <Styles.StyledLink href="/search" to="/search/javascript">
+        <Styles.StyledLink href="/search" to={`/search/${DEFAULT_SUBREDDIT}`}>
           Search
         </Styles.StyledLink>
         <Styles.StyledLink href="#how-it-works" as="a">

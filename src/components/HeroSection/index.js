@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DEFAULT_SUBREDDIT from '../../shared';
 import * as S from './HeroSection.styles';
 
 function HeroSection() {
@@ -11,11 +12,16 @@ function HeroSection() {
           Great timing, great results! Find the best time to post on your
           subreddit.
         </S.SubHeadline>
-        <Link to="/search/javascript" as="button">
-          <S.Button>SHOW ME THE BEST TIME</S.Button>
-        </Link>
-        <S.SubHeadlineTwo>r/javascript</S.SubHeadlineTwo>
-        <Link to="/search/javascript">
+        {/* <Link to={`/search/${DEFAULT_SUBREDDIT}`}> */}
+        <S.Button as={Link} to={`/search/${DEFAULT_SUBREDDIT}`}>
+          SHOW ME THE BEST TIME
+        </S.Button>
+        {/* </Link> */}
+        <S.SubHeadlineTwo>
+          r/
+          {DEFAULT_SUBREDDIT}
+        </S.SubHeadlineTwo>
+        <Link to={`/search/${DEFAULT_SUBREDDIT}`}>
           <S.Image />
         </Link>
       </S.Wrapper>
