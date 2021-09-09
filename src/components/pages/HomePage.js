@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import HeroSection from '../HeroSection';
+import InfoSection from '../InfoSection';
 
 const Container = styled.div`
   max-width: 1115px;
@@ -13,6 +14,7 @@ function HomePage() {
   return (
     <Container>
       <HeroSection />
+      <InfoSection />
     </Container>
   );
 }
