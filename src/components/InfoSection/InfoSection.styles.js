@@ -10,15 +10,10 @@ export const Container = styled.div`
   min-height: 350px;
 `;
 
-export const FirstSection = styled.section`
+export const Section = styled.article`
   min-width: 738px;
   min-height: 122px;
   margin-bottom: 105px;
-`;
-
-export const SecondSection = styled(FirstSection)`
-  margin-bottom: 0;
-  display: block;
 `;
 
 export const SectionHeader = styled.span`

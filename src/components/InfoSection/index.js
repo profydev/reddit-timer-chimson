@@ -4,7 +4,7 @@ import * as S from './InfoSection.styles';
 function InfoSection() {
   return (
     <S.Container>
-      <S.FirstSection id="how-it-works">
+      <S.Section id="how-it-works">
         <S.SectionHeader>How it works</S.SectionHeader>
         <S.SectionDetails>
           <S.Span>
@@ -16,8 +16,8 @@ function InfoSection() {
           </S.Span>
           <S.Span>• See immediately when to submit your reddit post.</S.Span>
         </S.SectionDetails>
-      </S.FirstSection>
-      <S.SecondSection id="about">
+      </S.Section>
+      <S.Section id="about">
         <S.SectionHeader>About</S.SectionHeader>
         <S.SectionDetails>
           <S.Span>
@@ -35,7 +35,7 @@ function InfoSection() {
             </S.A>
           </S.Span>
         </S.SectionDetails>
-      </S.SecondSection>
+      </S.Section>
     </S.Container>
   );
 }
