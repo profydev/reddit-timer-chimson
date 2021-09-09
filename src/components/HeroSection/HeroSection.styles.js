@@ -45,9 +45,6 @@ export const Button = styled.button`
   min-height: 36px;
   border: 0;
   min-width: 217px;
-  :hover {
-    cursor: pointer;
-  }
 `;
 
 export const Image = styled.div`
